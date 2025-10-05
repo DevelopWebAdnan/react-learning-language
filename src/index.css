@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+li {
+    margin-right: 10px;
+}
+
+a.active {
+    color: #5FCF80;
+    font-weight: 700;
+    text-decoration: underline;
+}
