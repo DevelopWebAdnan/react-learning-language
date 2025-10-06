@@ -75,7 +75,7 @@ const Footer = () => {
                 </nav>
             </div>
             <div className="text-center bg-neutral text-neutral-content p-10">
-                <p><small>Copyright © {new Date().getFullYear()} - All right reserved by LINGO BINGO: Arabic Language Learning App</small></p>
+                <p><small>Copyright © {new Date().getFullYear()} - All right reserved by LINGO BINGO: Arabic Language Learning Application.</small></p>
             </div>
         </footer>
     );
