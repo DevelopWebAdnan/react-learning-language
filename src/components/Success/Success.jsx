@@ -6,7 +6,7 @@ const Success = () => {
     // useCountUp({ ref: 'counter', end: 1234567 });
     return (
         <div>
-            <h4 className="text-2xl font-bold text-rose-800">Success section: User count, lesson count, vocabulary count, Tutorial count. Use dummy information for count. Animate this success count.</h4>
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-rose-800">Our Success</h3>
             {/* <CountUp end={100} delay={2}
              duration={2.75}
              separator=' '
@@ -24,13 +24,56 @@ const Success = () => {
             {/* </div> */}
             {/* )} 
             </CountUp> */}
-            <CountUp start={0} end={100}>
-                {({ countUpRef }) => (
-                    <div>
-                        <span ref={countUpRef}></span>
-                    </div>
-                )}
-            </CountUp>
+
+            {/* Stat */}
+            <div className="stats stats-vertical lg:stats-horizontal shadow">
+                <div className="stat">
+                    <div className="text-xl lg:text-2xl">Users</div>
+                    <CountUp start={0} end={1000}>
+                        {({ countUpRef }) => (
+                            <div>
+                                <span ref={countUpRef} className="stat-value"></span>
+                            </div>
+                        )}
+                    </CountUp>
+                    {/* <div className="stat-desc">Jan 1st - Feb 1st</div> */}
+                </div>
+
+                <div className="stat">
+                    <div className="text-xl lg:text-2xl">Lesson Count</div>
+                    <CountUp start={0} end={10}>
+                        {({ countUpRef }) => (
+                            <div>
+                                <span ref={countUpRef} className="stat-value"></span>
+                            </div>
+                        )}
+                    </CountUp>
+
+                </div>
+
+                <div className="stat">
+                    <div className="text-xl lg:text-2xl">Vocabulary Count</div>
+                    <CountUp start={0} end={150}>
+                        {({ countUpRef }) => (
+                            <div>
+                                <span ref={countUpRef} className="stat-value"></span>
+                            </div>
+                        )}
+                    </CountUp>
+
+                </div>
+
+                <div className="stat">
+                    <div className="text-xl lg:text-2xl">Tutorial Count</div>
+                     <CountUp start={0} end={10}>
+                        {({ countUpRef }) => (
+                            <div>
+                                <span ref={countUpRef} className="stat-value"></span>
+                            </div>
+                        )}
+                    </CountUp>
+                </div>
+            </div>
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/images/logo2.png'
+import logo3 from '../../assets/images/3.png';
 
 const Footer = () => {
     return (
@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
                 <aside>
                     <a href="#" className='w-44'>
-                        <img className='w-full' src={logo} alt="" />
+                        <img className='w-full' src={logo3} alt="" />
                     </a>
                     <p>
                         <span className='font-bold'>Phone: </span>(+880) 1823875623
@@ -75,7 +75,7 @@ const Footer = () => {
                 </nav>
             </div>
             <div className="text-center bg-neutral text-neutral-content p-10">
-                <p><small>Copyright © {new Date().getFullYear()} - All right reserved by LINGO BINGO: Arabic Language Learning Application.</small></p>
+                <p><small>Copyright © {new Date().getFullYear()} - All right reserved by LINGO BINGO: A Vocabulary Learning Application.</small></p>
             </div>
         </footer>
     );
