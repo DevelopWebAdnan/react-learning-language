@@ -40,7 +40,7 @@ const Success = () => {
                 </div>
 
                 <div className="stat">
-                    <div className="text-xl lg:text-2xl">Lesson Count</div>
+                    <div className="text-xl lg:text-2xl">Lessons</div>
                     <CountUp start={0} end={10}>
                         {({ countUpRef }) => (
                             <div>
@@ -52,7 +52,7 @@ const Success = () => {
                 </div>
 
                 <div className="stat">
-                    <div className="text-xl lg:text-2xl">Vocabulary Count</div>
+                    <div className="text-xl lg:text-2xl">Vocabularies</div>
                     <CountUp start={0} end={150}>
                         {({ countUpRef }) => (
                             <div>
@@ -64,7 +64,7 @@ const Success = () => {
                 </div>
 
                 <div className="stat">
-                    <div className="text-xl lg:text-2xl">Tutorial Count</div>
+                    <div className="text-xl lg:text-2xl">Tutorials</div>
                      <CountUp start={0} end={10}>
                         {({ countUpRef }) => (
                             <div>
