@@ -3,13 +3,15 @@ import pexelsAssad from "../../assets/images/pexels-assadtanoliphotographer.jpg"
 import pexelsDefri from "../../assets/images/pexels-defrinomaasy.jpg";
 import pexelsSfean from "../../assets/images/pexels-sfean-zaben.jpg";
 import pexelsPok from "../../assets/images/pexels-pok-rie.jpg";
+import Heading from '../Heading/Heading';
 
 
 const ImageSlider = () => {
     return (
         <div>
-            <h4 className="text-2xl font-bold text-rose-800">Banner/Slider section: Language learning images with a slider</h4>
-            <div className="carousel w-full">
+            <Heading subtitle="Banner/Slider section:"></Heading>
+            <Heading title="Language learning images with a slider"></Heading>
+            <div className="carousel w-full h-[600px]">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img
                         src={pexelsAssad}

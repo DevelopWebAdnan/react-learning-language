@@ -1,10 +1,11 @@
 import React from 'react';
+import Heading from '../Heading/Heading';
 
 const Testimonials = () => {
     return (
         <div>
-            <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-rose-800">Testimonials</h3>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-rose-800">WHAT ARE THEY SAYING</h2>
+            <Heading subtitle="Testimonials"></Heading>
+            <Heading title="WHAT ARE THEY SAYING"></Heading>
 
             {/* Carousel */}
             <div className=" w-full carousel">

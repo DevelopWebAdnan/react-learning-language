@@ -1,9 +1,11 @@
 import React from 'react';
+import Heading from '../../components/Heading/Heading';
 
 const StartLearning = () => {
     return (
         <div>
-            <h3 className="text-pink-700 font-semibold">Start Learning</h3>
+            <Heading subtitle="Start Learning"></Heading>
+            <Heading title="Let's Learn"></Heading>
         </div>
     );
 };

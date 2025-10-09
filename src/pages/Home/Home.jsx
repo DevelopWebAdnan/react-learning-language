@@ -12,7 +12,6 @@ import Speciality from '../../components/Speciality/Speciality';
 const Home = () => {
     return (
         <div>
-            <h3 className="text-rose-700 font-semibold">Home</h3>
             <section className='my-14 md:my-16 lg:my-20'>
                 <ImageSlider></ImageSlider>
             </section>

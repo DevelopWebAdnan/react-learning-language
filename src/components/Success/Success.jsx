@@ -1,12 +1,13 @@
 import React from 'react';
 import CountUp from 'react-countup';
+import Heading from '../Heading/Heading';
 // import CountUp, { useCountUp } from 'react-countup';
 
 const Success = () => {
     // useCountUp({ ref: 'counter', end: 1234567 });
     return (
         <div>
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-rose-800">Our Success</h3>
+           <Heading title="Our Success"></Heading>
             {/* <CountUp end={100} delay={2}
              duration={2.75}
              separator=' '
@@ -26,7 +27,7 @@ const Success = () => {
             </CountUp> */}
 
             {/* Stat */}
-            <div className="stats stats-vertical lg:stats-horizontal shadow">
+            <div className="stats stats-vertical lg:stats-horizontal shadow grid items-center md:justify-center">
                 <div className="stat">
                     <div className="text-xl lg:text-2xl">Users</div>
                     <CountUp start={0} end={1000}>

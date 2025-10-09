@@ -2,13 +2,14 @@ import React from 'react';
 import chatting from '../../assets/images/chatting.png';
 import reshotVideo from '../../assets/images/reshot-icon-video.svg';
 import reshotLanguage from '../../assets/images/reshot-icon-language.svg';
+import Heading from '../Heading/Heading';
 
 const Speciality = () => {
     return (
         <div>
-            <h3 className="text-2xl font-bold text-rose-800">Our Course Speciality</h3>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-rose-800 mb-6">Why Choose Us</h2>
-            <div className="join join-vertical lg:join-horizontal flex justify-center items-center">
+            <Heading subtitle="Our Course Speciality"></Heading>
+            <Heading title="Why Choose Us"></Heading>
+            <div className="join join-vertical lg:join-horizontal flex justify-center items-center mt-6">
                 <div className="card join-item bg-base-100 w-96 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img
