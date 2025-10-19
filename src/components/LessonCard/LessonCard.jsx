@@ -1,8 +1,8 @@
 import React from 'react';
 import Lesson from '../../pages/Lesson/Lesson';
 
-const LessonCard = ({vocabularyLessonNo}) => {
-    console.log(vocabularyLessonNo);
+const LessonCard = ({uniqueLesson}) => {
+    console.log(uniqueLesson);
     
     return (
         <div>
@@ -14,7 +14,7 @@ const LessonCard = ({vocabularyLessonNo}) => {
             <div className="card w-36 bg-base-100 card-md shadow-sm">
                 <div className="card-body">
                     {
-                    <h2 className="card-title">Lesson {vocabularyLessonNo}</h2>
+                    <h2 className="card-title">Lesson {uniqueLesson}</h2>
                     }
                 </div>
             </div>

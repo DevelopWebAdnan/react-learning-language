@@ -15,6 +15,7 @@ import Tutorials from './pages/Tutorials/Tutorials.jsx';
 import AboutUs from './pages/AboutUs/AboutUs.jsx';
 import Lesson from './pages/Lesson/Lesson.jsx';
 import LessonCards from './components/LessonCards/LessonCards.jsx';
+import MyProfile from './pages/MyProfile/MyProfile.jsx';
 
 const router = createBrowserRouter([
   {
@@ -52,17 +53,21 @@ const router = createBrowserRouter([
       {
         path: "/aboutUs",
         element: <AboutUs></AboutUs>
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/register",
+        element: <Register></Register>
+      },
+      {
+        path: "/myProfile",
+        element: <MyProfile></MyProfile>
       }
     ],
   },
-  {
-    path: "login",
-    element: <Login></Login>
-  },
-  {
-    path: "register",
-    element: <Register></Register>
-  }
 ]);
 
 

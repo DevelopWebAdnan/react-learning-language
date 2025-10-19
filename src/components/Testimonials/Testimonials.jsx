@@ -26,10 +26,10 @@ const Testimonials = () => {
                             <div className="justify-end card-actions">
                                 <div className="rating rating-md">
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />
-                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="2 star" />
+                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="2 star" defaultChecked />
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="3 star" />
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="4 star" />
-                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="5 star" defaultChecked />
+                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="5 star" />
                                 </div>
                             </div>
                         </div>
