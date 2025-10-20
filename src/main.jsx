@@ -16,11 +16,13 @@ import AboutUs from './pages/AboutUs/AboutUs.jsx';
 import Lesson from './pages/Lesson/Lesson.jsx';
 import LessonCards from './components/LessonCards/LessonCards.jsx';
 import MyProfile from './pages/MyProfile/MyProfile.jsx';
+import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -39,16 +41,14 @@ const router = createBrowserRouter([
         ]
       },
       {
+        path: "/startLearning/:lesson",
+        loader: () => fetch("./vocabularies.json"),
+        element: <Lesson></Lesson>
+      },
+      {
         path: "/tutorials",
         element: <Tutorials></Tutorials>,
         loader: () => fetch("./vocabularies.json"),
-        children: [
-          {
-            path: "/tutorials/:lesson",
-            element: <Lesson></Lesson>,
-            // loader: () => fetch("./vocabularies.json")
-          }
-        ]
       },
       {
         path: "/aboutUs",

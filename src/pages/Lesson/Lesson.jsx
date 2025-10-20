@@ -1,11 +1,13 @@
 import React from 'react';
 import Heading from '../../components/Heading/Heading';
+import { useLoaderData } from 'react-router-dom';
 // import { useParams } from 'react-router-dom';
 
-const Lesson = ({tutorial}) => {
-    console.log(tutorial);
-    const {Lesson_no} = tutorial;
-    console.log(Lesson_no);
+const Lesson = () => {
+    const vocabularies = useLoaderData();
+    console.log(vocabularies);
+    const vocabularyCards = vocabularies.map(vocabularyCard => vocabularyCard);
+    console.log(vocabularyCards);
     
     return (
         <div>
@@ -13,8 +15,8 @@ const Lesson = ({tutorial}) => {
                 <div className="hero-content text-center">
                     <div>
                         <Heading subtitle="Tutorial"></Heading>
-                        <p>{tutorial.word}</p>
-                        <Heading title={`Lesson No.${Lesson_no}`}></Heading>
+                        {/* <p>{tutorial.word}</p> */}
+                        {/* <Heading title={`Lesson No.${Lesson_no}`}></Heading> */}
                     </div>
                 </div>
             </div>
