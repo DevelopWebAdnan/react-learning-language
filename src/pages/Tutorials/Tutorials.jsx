@@ -20,7 +20,7 @@ const Tutorials = () => {
             </div>
 
             {/* Lesson_no */}
-            <Outlet></Outlet>
+            {/* <Outlet></Outlet> */}
         </div>
     );
 };

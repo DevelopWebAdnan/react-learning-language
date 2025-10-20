@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/startLearning/:lesson",
-        loader: () => fetch("./vocabularies.json"),
+        loader: () => fetch("../vocabularies.json"),
         element: <Lesson></Lesson>
       },
       {
