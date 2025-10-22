@@ -10,3 +10,15 @@ a.active {
     font-weight: 700;
     text-decoration: underline;
 }
+
+.bg_easy {
+    background-color:darkgreen;
+}
+
+.bg_medium {
+    background-color:darkgoldenrod;
+}
+
+.bg_difficult {
+    background-color: brown;
+}

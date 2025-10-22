@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
-import Lesson from '../../pages/Lesson/Lesson';
 // import noDuplicate from '../../utilities/noDuplicate';
 
 const LessonCards = () => {

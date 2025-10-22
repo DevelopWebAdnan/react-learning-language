@@ -2,22 +2,22 @@
 
 // const lesson = '4';
 
-const matchingLessons = (array, lesson) => {
-    console.log("array, lesson: ", array, lesson);
-    let matchingLessonsArray = [];
-    for (const singleLesson of array) {
-        console.log(singleLesson);
-        if (singleLesson == lesson) {
-            matchingLessonsArray.push(singleLesson);
-        }
-        else {
-            continue;
-        }
-        console.log("matchingLessonsArray: ", matchingLessonsArray);
-    }
-    return matchingLessonsArray;
-}
+// const matchingLessons = (array, lesson) => {
+//     console.log("array, lesson: ", array, lesson);
+//     let matchingLessonsArray = [];
+//     for (const singleLesson of array) {
+//         console.log(singleLesson);
+//         if (singleLesson == lesson) {
+//             matchingLessonsArray.push(singleLesson);
+//         }
+//         else {
+//             continue;
+//         }
+//         console.log("matchingLessonsArray: ", matchingLessonsArray);
+//     }
+//     return matchingLessonsArray;
+// }
 
 // console.log("matchingLessons(lessons, lesson): ", matchingLessons(lessons, lesson));
 
-export default matchingLessons;
+// export default matchingLessons;

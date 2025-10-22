@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Heading from '../../components/Heading/Heading';
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import VocabularyCards from '../../components/VocabularyCards/VocabularyCards';
-// import matchingLessons from '../../utilities/matchingLessons';
 
 const Lesson = () => {
     const vocabularies = useLoaderData();
