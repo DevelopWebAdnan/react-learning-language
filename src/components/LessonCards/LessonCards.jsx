@@ -5,13 +5,13 @@ import Lesson from '../../pages/Lesson/Lesson';
 
 const LessonCards = () => {
     const vocabularies = useLoaderData();
-    console.log(vocabularies);
+    // console.log(vocabularies);
 
     const [uniqueLessons, setUniqueLessons] = useState([]);
 
     useEffect(() => {
         const lessons = vocabularies.map(vocabularyCard => vocabularyCard.Lesson_no);
-        console.log(lessons);
+        // console.log(lessons);
 
         let uniqueItems = [];
         for (const lesson of lessons) {

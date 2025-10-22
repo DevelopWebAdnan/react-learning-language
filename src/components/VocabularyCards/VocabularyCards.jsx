@@ -1,15 +1,9 @@
 import React from 'react';
 
-const VocabularyCards = ({ vocabulary }) => {
-    console.log(vocabulary);
+const VocabularyCards = ({ matchingVocabulary }) => {
+    console.log("props=> matchingVocabulary ", matchingVocabulary);
 
-    const { word, meaning, pronunciation, part_of_speech, Lesson_no } = vocabulary;
-
-    //    const [vocabularyCards, setVocabularyCards] = useState({}); 
-
-    // useEffect(() => {
-    //     const VocabularyCard = 
-    //     }, [])
+    const { word, meaning, pronunciation, part_of_speech, Lesson_no } = matchingVocabulary;
 
     return (
         <div className="card bg-primary text-primary-content w-3xs md:w-2xs lg:w-xs">
@@ -18,7 +12,7 @@ const VocabularyCards = ({ vocabulary }) => {
                 <h2 className="card-title">Word: {word}</h2>
                 <p>Meaning: {meaning}</p>
                 <p>Pronunciation: {pronunciation}</p>
-                <p>Parts of speech: {part_of_speech}</p>
+                <p>Part of speech: {part_of_speech}</p>
                 <div className="card-actions justify-end">
                     <button className="btn">When To Say</button>
                 </div>

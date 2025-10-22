@@ -1,37 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Heading from '../../components/Heading/Heading';
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import VocabularyCards from '../../components/VocabularyCards/VocabularyCards';
+// import matchingLessons from '../../utilities/matchingLessons';
 
 const Lesson = () => {
     const vocabularies = useLoaderData();
-    console.log(vocabularies);
+    // console.log(vocabularies);
 
     const { lesson } = useParams();
-    console.log(lesson);
+    // console.log(lesson);
 
-    // const [matchingLessons, setMatchingLessons] = useState({});
+    const [matchingVocabularies, setMatchingVocabularies] = useState([]);
 
-     useEffect(() => {
-            const vocabularyLessons = vocabularies.map(vocabularyCard => vocabularyCard.Lesson_no);
-            console.log(vocabularyLessons);
-            let matchingLessonsArray = [];
-            for(const vocabularyLesson of vocabularyLessons) {
-                console.log(vocabularyLesson);
-                if(vocabularyLesson == lesson) {
-                    matchingLessonsArray.push(vocabularyLesson);
-                }
-                else {
-                    continue;
-                }
-            }
-
-            console.log("matchingLessonsArray: ", matchingLessonsArray);
-            // setMatchingLessons(matchingLessonsArray);
-            // console.log(matchingLessons);
-            // const matchingLessonCards = vocabularyLessons.filter(vocabularyLesson => vocabularyLessons === matchingLessons)
-            // console.log(matchingLessonCards);
-            }, [lesson, vocabularies])
+    useEffect(() => {
+        const matchingVocabularyCards = [...vocabularies].filter(vocabularyCard => vocabularyCard.Lesson_no == lesson);
+        console.log(matchingVocabularyCards);
+       
+        setMatchingVocabularies(matchingVocabularyCards);
+        // console.log(matchingVocabularies);
+        
+        // console.log(matchingLessons(vocabularyLessons, lesson));
+    }, [lesson, vocabularies])
 
     const navigate = useNavigate();
 
@@ -49,8 +39,8 @@ const Lesson = () => {
             <section className='my-14 md:my-16 lg:my-20'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 justify-center'>
                     {
-                        vocabularies.map(vocabulary =>
-                            <VocabularyCards key={vocabulary.Id} vocabulary={vocabulary}>
+                        matchingVocabularies.map(matchingVocabulary =>
+                            <VocabularyCards key={matchingVocabulary.Id} matchingVocabulary={matchingVocabulary}>
                             </VocabularyCards>
                         )
                     }
