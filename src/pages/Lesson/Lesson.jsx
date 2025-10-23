@@ -47,7 +47,7 @@ const Lesson = () => {
             </section>
 
             <div className='text-center mb-4 md:mb-5'>
-                <button className="btn btn-outline btn-lg" onClick={() => navigate(-1)}>Back To Lesson</button>
+                <button className="btn btn-outline btn-lg" onClick={() => navigate(-1)}>Go Back</button>
             </div>
         </div>
     );

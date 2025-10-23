@@ -16,6 +16,7 @@ import Lesson from './pages/Lesson/Lesson.jsx';
 import LessonCards from './components/LessonCards/LessonCards.jsx';
 import MyProfile from './pages/MyProfile/MyProfile.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
+import Modal from './components/Modal/Modal.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,9 +41,13 @@ const router = createBrowserRouter([
         ]
       },
       {
-        path: "/startLearning/:lesson",
+        path: "/startLearning/lesson/:lesson",
         loader: () => fetch("../vocabularies.json"),
         element: <Lesson></Lesson>
+      },
+      {
+        path: "/lesson/id/:id",
+        element: <Modal></Modal>
       },
       {
         path: "/tutorials",

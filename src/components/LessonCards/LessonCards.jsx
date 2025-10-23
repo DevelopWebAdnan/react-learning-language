@@ -36,7 +36,7 @@ const LessonCards = () => {
             {
                 uniqueLessons.map(uniqueLesson =>
                     <div key={uniqueLesson} className="card w-36 bg-base-100 card-md shadow-sm">
-                        <Link to={`/startLearning/${uniqueLesson}`}>
+                        <Link to={`/startLearning/lesson/${uniqueLesson}`}>
                             <div className="card-body">
                                 {
                                     <h2 className="card-title">Lesson {uniqueLesson}</h2>
