@@ -1,9 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const Register = () => {
 
+    const { createUser } = useContext(AuthContext);
+
+    const navigate = useNavigate();
+
     const handleRegister = e => {
+        e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
@@ -11,6 +17,15 @@ const Register = () => {
         console.log(name, email, password);
 
         // create user
+        createUser(email, password)
+        .then(result => {
+            console.log(result.user);
+            e.target.reset();
+            navigate('/');
+        })
+        .catch(error => {
+            console.log(error.message);
+        })
     }
 
     return (
@@ -25,13 +40,15 @@ const Register = () => {
                             <label className="label">Name</label>
                             <input type="text" name='name' className="input" placeholder="Name" />
                             <label className="label">Email</label>
-                            <input type="email" name='email' className="input" placeholder="Email" />
+                            <input type="email" name='email' className="input" placeholder="Email" required />
+                            <label className="label">Photo URL</label>
+                            <input type="text" name='photo' className="input" placeholder="Photo url" required />
                             <label className="label">Password</label>
-                            <input type="password" name='password' className="input" placeholder="Password" />
+                            <input type="password" name='password' className="input" placeholder="Password" required />
                             <button className="btn btn-neutral mt-4">Register</button>
 
-                            <p className='m-2 md:m-3 lg:m-4 font-semibold'>Already have an account? Please <Link to='/login'>Login</Link></p>
                         </form>
+                            <p className='m-2 md:m-3 lg:m-4 font-semibold'>Already have an account? Please <Link to='/login'>Login</Link></p>
                     </div>
                 </div>
             </div>

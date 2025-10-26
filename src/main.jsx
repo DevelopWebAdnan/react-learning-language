@@ -17,6 +17,7 @@ import LessonCards from './components/LessonCards/LessonCards.jsx';
 import MyProfile from './pages/MyProfile/MyProfile.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import Modal from './components/Modal/Modal.jsx';
+import AuthProvider from './providers/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -77,6 +78,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 )
