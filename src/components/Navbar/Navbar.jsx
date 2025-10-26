@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
+import logoRemoveBg from "../../assets/images/1-removebg.png";
 
 const Navbar = () => {
 
-    // const {user} = useContext(AuthContext);
-    // console.log(user);
+    const { user, signOutUser } = useContext(AuthContext);
+    console.log(user);
+
+    const handleSignOut = () => {
+        signOutUser()
+        .then(result => {
+            console.log(result.user);
+        })
+        .catch(error => console.log('ERROR', error.message));
+    }
 
     const links = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -29,7 +38,12 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Email </a>
+                {/* <a className="btn btn-ghost text-xl">Email </a> */}
+                <div className='w-20 md:w-32 lg:w-40'>
+                    <Link to="/">
+                        <img className='w-screen' src={logoRemoveBg} alt="" />
+                    </Link>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -37,7 +51,14 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link className='btn btn-lg font-bold text-base-100 bg-[#5FCF80]' to="/login">Login</Link>
+                {
+                    user ? <>
+                        <img src={user?.photoURL} alt="" />
+                        <button onClick={handleSignOut} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Log-Out</button>
+                    </>
+                        :
+                        <Link className='btn btn-lg font-bold text-base-100 bg-[#5FCF80]' to="/login">Login</Link>
+                }
             </div>
         </div>
     );

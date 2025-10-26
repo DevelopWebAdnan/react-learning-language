@@ -1,9 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
 
 const Register = () => {
+
+    const [errorMessage, setErrorMessage] = useState('');
 
     const { createUser, loginWithGoogle } = useContext(AuthContext);
 
@@ -13,9 +15,18 @@ const Register = () => {
         e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
+        const photo = e.target.photo.value;
         const password = e.target.password.value;
 
-        console.log(name, email, password);
+        console.log(name, email, photo, password);
+
+        // RegEx for password validation
+        const regex = /^(?=.*[a-z])(?=.*[A-Z])[A-Za-z\d@$!%*?&]{6,}$/;
+
+        if(!regex.test(password)) {
+            setErrorMessage('Password must contain at least one uppercase letter, at least one lowercase letter, and length must be at least 6 characters.');
+            return;
+        }
 
         // create user
         createUser(email, password)
@@ -25,7 +36,7 @@ const Register = () => {
                 navigate('/');
             })
             .catch(error => {
-                console.log(error.message);
+                setErrorMessage(error.message);
             })
     }
 
@@ -33,13 +44,13 @@ const Register = () => {
 
     const handleGoogleLogin = () => {
         loginWithGoogle(googleProvider)
-        .then(result => {
-            console.log(result.user);
-            navigate('/');
-        })
-        .catch(error => {
-            console.log('ERROR', error);
-        })
+            .then(result => {
+                console.log(result.user);
+                navigate('/');
+            })
+            .catch(error => {
+                setErrorMessage(error.message);
+            })
     }
 
     return (
@@ -62,6 +73,10 @@ const Register = () => {
                             <button className="btn btn-neutral mt-4">Register</button>
 
                         </form>
+                        {
+                            errorMessage && <p className='text-red-600'>{errorMessage}</p>
+                        }
+
                         <p className='m-2 md:m-3 lg:m-4 font-semibold'>Already have an account? Please <Link to='/login'>Login</Link></p>
 
                         {/* Google */}
