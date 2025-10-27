@@ -16,8 +16,8 @@ import Lesson from './pages/Lesson/Lesson.jsx';
 import LessonCards from './components/LessonCards/LessonCards.jsx';
 import MyProfile from './pages/MyProfile/MyProfile.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
-import Modal from './components/Modal/Modal.jsx';
 import AuthProvider from './providers/AuthProvider.jsx';
+import PrivateRoute from './routes/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,28 +32,29 @@ const router = createBrowserRouter([
       {
         path: "/startLearning",
         element: <StartLearning></StartLearning>,
-        // loader: () => fetch("./vocabularies.json"),
-        children: [
-          {
-            path: "/startLearning",
-            element: <LessonCards></LessonCards>,
-            loader: () => fetch("./vocabularies.json")
-          }
-        ]
+        loader: () => fetch("/vocabularies.json"),
+        // children: [
+        //   {
+        //     path: "/startLearning",
+        //     element: <LessonCards></LessonCards>,
+        //     loader: () => fetch("/vocabularies.json")
+        //   }
+        // ]
       },
       {
-        path: "/startLearning/lesson/:lesson",
-        loader: () => fetch("../vocabularies.json"),
-        element: <Lesson></Lesson>
+        path: "/startLearning/lessons",
+        element: <LessonCards></LessonCards>,
+        loader: () => fetch("/vocabularies.json")
       },
       {
-        path: "/lesson/id/:id",
-        element: <Modal></Modal>
+        path: "/startLearning/lessons/:lesson",
+        loader: () => fetch("/vocabularies.json"),
+        element: <PrivateRoute><Lesson></Lesson></PrivateRoute>
       },
       {
         path: "/tutorials",
         element: <Tutorials></Tutorials>,
-        loader: () => fetch("./vocabularies.json"),
+        loader: () => fetch("/vocabularies.json"),
       },
       {
         path: "/aboutUs",
@@ -69,7 +70,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/myProfile",
-        element: <MyProfile></MyProfile>
+        element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>
       }
     ],
   },

@@ -1,13 +1,15 @@
 import { GoogleAuthProvider } from 'firebase/auth';
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 
-const Login = () => {
+const Login = ({pathname}) => {
+    console.log(pathname);
 
     const { loginUser, loginWithGoogle } = useContext(AuthContext);
 
     const [errorMessage, setErrorMessage] = useState('');
+
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -20,7 +22,6 @@ const Login = () => {
             console.log(result.user);
         })
         .catch(error => {
-            console.log('ERROR', error.message);
             setErrorMessage(error.message);
         })
     }
@@ -33,7 +34,6 @@ const Login = () => {
                 console.log(result.user);
             })
             .catch(error => {
-                console.log('ERROR', error.message);
                 setErrorMessage(error.message);
             })
     }

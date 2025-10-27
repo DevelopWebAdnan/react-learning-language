@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Heading from '../../components/Heading/Heading';
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import VocabularyCards from '../../components/VocabularyCards/VocabularyCards';
 
 const Lesson = () => {
     const vocabularies = useLoaderData();
-    // console.log(vocabularies);
 
     const { lesson } = useParams();
-    // console.log(lesson);
 
     const [matchingVocabularies, setMatchingVocabularies] = useState([]);
 
@@ -17,9 +15,6 @@ const Lesson = () => {
         console.log(matchingVocabularyCards);
        
         setMatchingVocabularies(matchingVocabularyCards);
-        // console.log(matchingVocabularies);
-        
-        // console.log(matchingLessons(vocabularyLessons, lesson));
     }, [lesson, vocabularies])
 
     const navigate = useNavigate();
@@ -47,7 +42,7 @@ const Lesson = () => {
             </section>
 
             <div className='text-center mb-4 md:mb-5'>
-                <button className="btn btn-outline btn-lg" onClick={() => navigate(-1)}>Go Back</button>
+                <button className="btn btn-outline btn-lg" onClick={() => navigate("/startLearning")}>Back To Lesson</button>
             </div>
         </div>
     );
