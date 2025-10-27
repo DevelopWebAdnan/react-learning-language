@@ -10,7 +10,7 @@ const StartLearning = () => {
     const [uniqueLessons, setUniqueLessons] = useState([]);
 
     useEffect(() => {
-        if (vocabularies) {
+        // if (vocabularies) {
             const lessons = vocabularies.map(vocabularyCard => vocabularyCard.Lesson_no);
             // console.log(lessons);
             let uniqueItems = [];
@@ -25,10 +25,10 @@ const StartLearning = () => {
             }
             // console.log(uniqueItems);
             setUniqueLessons(uniqueItems);
-        }
-        else {
-            setUniqueLessons([]);
-        }
+        // }
+        // else {
+        //     setUniqueLessons([]);
+        // }
     }, [vocabularies])
 
     return (
