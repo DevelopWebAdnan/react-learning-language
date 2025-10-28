@@ -1,16 +1,14 @@
-import React from 'react';
 import pexelsAssad from "../../assets/images/pexels-assadtanoliphotographer.jpg";
 import pexelsDefri from "../../assets/images/pexels-defrinomaasy.jpg";
 import pexelsSfean from "../../assets/images/pexels-sfean-zaben.jpg";
 import pexelsPok from "../../assets/images/pexels-pok-rie.jpg";
 import Heading from '../Heading/Heading';
 
-
 const ImageSlider = () => {
     return (
         <div>
             <Heading title="Images with a slider"></Heading>
-            <div   data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="carousel w-full h-[600px]">
+            <div className="carousel w-full h-[600px]">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img
                         src={pexelsAssad}

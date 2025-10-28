@@ -1,4 +1,3 @@
-import React from 'react';
 import pexelsJulia from "../../assets/images/pexels-julia-m-cameron.jpg";
 import Heading from '../../components/Heading/Heading';
 
@@ -6,7 +5,7 @@ const AboutUs = () => {
     return (
         <div>
             <h2 className="font-bold text-green-700">About Us</h2>
-            <div   data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="hero">
+            <div className="hero">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img
                         src={pexelsJulia}

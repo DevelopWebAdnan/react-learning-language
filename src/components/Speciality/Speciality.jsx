@@ -1,4 +1,3 @@
-import React from 'react';
 import chatting from '../../assets/images/chatting.png';
 import reshotVideo from '../../assets/images/reshot-icon-video.svg';
 import reshotLanguage from '../../assets/images/reshot-icon-language.svg';

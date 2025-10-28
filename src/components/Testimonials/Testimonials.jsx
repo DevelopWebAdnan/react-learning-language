@@ -1,5 +1,7 @@
-import React from 'react';
 import Heading from '../Heading/Heading';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// import 'aos/dist/aos.js';
 
 const Testimonials = () => {
     return (
@@ -8,7 +10,7 @@ const Testimonials = () => {
             <Heading title="WHAT ARE THEY SAYING"></Heading>
 
             {/* Carousel */}
-            <div className=" w-full carousel">
+            <div className="w-full carousel">
                 <div id="item1" className="carousel-item w-full justify-center">
                     <div className="card bg-base-100 card-md shadow-sm">
                         <div className="card-body">
