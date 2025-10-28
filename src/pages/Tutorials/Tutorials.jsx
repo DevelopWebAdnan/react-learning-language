@@ -1,12 +1,8 @@
-import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import Lesson from '../Lesson/Lesson';
 import Heading from '../../components/Heading/Heading';
 
 const Tutorials = () => {
-    // const tutorials = useLoaderData();
-    // console.log(tutorials);
-
+   
     return (
         <div>
             {/* <h3 className="text-base-600 font-bold">Tutorials</h3> */}
@@ -18,9 +14,6 @@ const Tutorials = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Lesson_no */}
-            {/* <Outlet></Outlet> */}
 
             <section className='my-14 md:my-16 lg:my-20'>
                 <div className='text-center mb-4 md:mb-5 lg:mb-6'>

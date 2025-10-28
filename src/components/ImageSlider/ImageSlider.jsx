@@ -10,7 +10,7 @@ const ImageSlider = () => {
     return (
         <div>
             <Heading title="Images with a slider"></Heading>
-            <div className="carousel w-full h-[600px]">
+            <div   data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="carousel w-full h-[600px]">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img
                         src={pexelsAssad}
