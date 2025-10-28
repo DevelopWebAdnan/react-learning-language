@@ -33,18 +33,10 @@ const router = createBrowserRouter([
         path: "/startLearning",
         element: <StartLearning></StartLearning>,
         loader: () => fetch("/vocabularies.json"),
-        // children: [
-        //   {
-        //     path: "/startLearning",
-        //     element: <LessonCards></LessonCards>,
-        //     loader: () => fetch("/vocabularies.json")
-        //   }
-        // ]
       },
       {
         path: "/startLearning/lessons",
         element: <LessonCards></LessonCards>,
-        loader: () => fetch("/vocabularies.json")
       },
       {
         path: "/startLearning/lessons/:lesson",
@@ -53,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/tutorials",
-        element: <Tutorials></Tutorials>,
+        element: <PrivateRoute><Tutorials></Tutorials></PrivateRoute>,
         loader: () => fetch("/vocabularies.json"),
       },
       {

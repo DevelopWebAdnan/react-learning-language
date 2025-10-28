@@ -4,7 +4,7 @@ const VocabularyCards = ({ matchingVocabulary }) => {
     console.log("props=> matchingVocabulary ", matchingVocabulary);
 
     const { word, meaning, pronunciation, part_of_speech, Lesson_no, difficulty, when_to_say, example, Id } = matchingVocabulary;
-    console.log('Word:', word, 'Meaning:', meaning, 'Pronunciation:', pronunciation, 'Part of speech:', part_of_speech, 'Lesson no:', Lesson_no, difficulty, 'When to say:', when_to_say, 'Example:', example, 'Id:', Id)
+    // console.log('Word:', word, 'Meaning:', meaning, 'Pronunciation:', pronunciation, 'Part of speech:', part_of_speech, 'Lesson no:', Lesson_no, difficulty, 'When to say:', when_to_say, 'Example:', example, 'Id:', Id)
 
     const modalRef = useRef(null)
 

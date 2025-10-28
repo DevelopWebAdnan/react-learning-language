@@ -36,6 +36,7 @@ const Login = () => {
         loginWithGoogle(googleProvider)
             .then(result => {
                 console.log(result.user);
+                navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
                 setErrorMessage(error.message);
