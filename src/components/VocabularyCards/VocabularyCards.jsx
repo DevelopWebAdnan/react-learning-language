@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
 const VocabularyCards = ({ matchingVocabulary }) => {
     console.log("props=> matchingVocabulary ", matchingVocabulary);
@@ -21,16 +21,13 @@ const VocabularyCards = ({ matchingVocabulary }) => {
             <div className={`card text-primary-content w-3xs md:w-2xs lg:w-xs 
 ${difficulty === 'easy' ? 'bg_easy' : (difficulty === 'medium' ? 'bg_medium' : 'bg_difficult')}`}>
                 <div className="card-body">
-                    <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-rose-700">Lesson No: {Lesson_no} </p>
-                    <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-rose-700">Difficulty: {difficulty} </p>
                     <h2 className="card-title">Word: {word}</h2>
                     <p className='md:text-lg lg:text-xl'>Meaning: {meaning}</p>
                     <p className='md:text-lg lg:text-xl'>Pronunciation: {pronunciation}</p>
                     <p className='md:text-lg lg:text-xl'>Part of speech: {part_of_speech}</p>
                     <div className="card-actions justify-end">
 
-                        {/* Open the modal using document.getElementById('ID').showModal() method */}
-                        <button className="btn" onClick={() => openModal()}>When To Say</button>
+                        <button className="btn font-bold text-base-100 bg-[#5FCF80]" onClick={() => openModal()}>When To Say</button>
                     </div>
                 </div>
             </div>
@@ -38,7 +35,6 @@ ${difficulty === 'easy' ? 'bg_easy' : (difficulty === 'medium' ? 'bg_medium' : '
             {/* Modal */}
             <dialog ref={modalRef} className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
-                    <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-rose-700">Id: {Id} </p>
                     <h3 className="font-bold text-lg md:text-xl lg:text-2xl">Word: {word}</h3>
                     <p className="py-4 md:py-5 lg:py-6 font-bold md:text-lg lg:text-xl">Meaning: {meaning}</p>
                     <p className="py-4 md:py-5 lg:py-6 font-semibold md:text-lg lg:text-xl">When to say: {when_to_say}</p>
@@ -46,7 +42,7 @@ ${difficulty === 'easy' ? 'bg_easy' : (difficulty === 'medium' ? 'bg_medium' : '
                     <div className="modal-action">
                         <form method="dialog">
                             {/* if there is a button in form, it will close the modal */}
-                            <button className="btn">Close</button>
+                            <button className="btn text-base-100 bg-[#5FCF80]">Close</button>
                         </form>
                     </div>
                 </div>

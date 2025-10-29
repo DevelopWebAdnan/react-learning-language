@@ -31,7 +31,7 @@ const Lesson = () => {
             </div>
 
             <section className='my-14 md:my-16 lg:my-20'>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 justify-center'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 justify-center items-center'>
                     {
                         matchingVocabularies.map(matchingVocabulary =>
                             <VocabularyCards key={matchingVocabulary.Id} matchingVocabulary={matchingVocabulary}>
@@ -42,7 +42,7 @@ const Lesson = () => {
             </section>
 
             <div className='text-center mb-4 md:mb-5'>
-                <button className="btn btn-outline btn-lg" onClick={() => navigate("/startLearning")}>Back To Lesson</button>
+                <button className="btn btn-outline btn-lg font-bold text-base-100 bg-[#5FCF80]" onClick={() => navigate("/startLearning")}>Back To Lesson</button>
             </div>
         </div>
     );

@@ -11,7 +11,7 @@ const ErrorPage = () => {
                 error.status === 404 && <div>
                     <h2 className="text-rose-500 text-2xl md:text-3xl lg:text-4xl font-bold my-7 md:my-10 lg:my-12">Page not found.</h2>
                     <p className="md:text-lg">Go back to where you are from</p>
-                    <Link to="/"><button className="btn btn-outline btn-lg">Home</button></Link>
+                    <Link to="/"><button className="btn btn-outline btn-lg font-bold text-base-100 bg-[#5FCF80]">Home</button></Link>
                 </div>
             }
         </div>

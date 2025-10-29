@@ -55,7 +55,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     user ? <>
-                        <img src={user?.photoURL} alt="" />
+                        <img src={user?.photoURL} className='w-11 md:w-20 lg:w-24 rounded-4xl md:rounded-3xl lg:rounded-2xl' alt="" />
                         <button onClick={signOutUser} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Log-Out</button>
                     </>
                         :

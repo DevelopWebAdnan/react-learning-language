@@ -9,7 +9,7 @@ const Tutorials = () => {
             <div className="hero bg-[#5bc57a] min-h-11 py-6 md:py-7 mb-4 md:mb-5">
                 <div className="hero-content text-center">
                     <div>
-                        <Heading subtitle="Tutorials"></Heading>
+                        <Heading title="Tutorials"></Heading>
                         {/* <Heading title="Lessons"></Heading> */}
                     </div>
                 </div>
@@ -24,54 +24,54 @@ const Tutorials = () => {
                     <div className="card shadow-sm">
                         <div className='card-body'>
 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/D1aVVfBsA5s?si=8XLLp4jDlIpZW9vZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/D1aVVfBsA5s?si=8XLLp4jDlIpZW9vZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className="card shadow-sm">
                         <div className='card-body'>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/4C6AgaSCn5A?si=X7JhLtKE7AzlugLf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/4C6AgaSCn5A?si=X7JhLtKE7AzlugLf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className="card shadow-sm">
                         <div className="card-body">
 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vEfd47I7R68?si=eqIFqgV9bqnUjbWK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/vEfd47I7R68?si=eqIFqgV9bqnUjbWK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className="card shadow-sm">
                         <div className='card-body'>
 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XHXoJNaXyls?si=J7mc-qpNQHp-nHf5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/XHXoJNaXyls?si=J7mc-qpNQHp-nHf5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
 
                     <div className="card shadow-sm">
                         <div className="card-body">
 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/oidicz5Trvc?si=uPhXWt7vQe6qFXML" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/oidicz5Trvc?si=uPhXWt7vQe6qFXML" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className="card shadow-sm">
                         <div className='card-body'>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Mj1G1HwehPg?si=CBN_ByxYFG-tRdc7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/Mj1G1HwehPg?si=CBN_ByxYFG-tRdc7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className="card shadow-sm">
                         <div className="card-body">
 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TtT69_X5sf4?si=zdtr0_3U3xyWhQur" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/TtT69_X5sf4?si=zdtr0_3U3xyWhQur" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className="card shadow-sm">
                         <div className='card-body'>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XU4q9RmLj38?si=wT70hgLpERv0I0H-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/XU4q9RmLj38?si=wT70hgLpERv0I0H-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>
             </section >
 
             <div className='text-center mb-4 md:mb-5'>
-                <Link to="/startLearning"><button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Learn Vocabularies</button></Link>
+                <Link to="/startLearning"><button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-base-100 bg-[#5FCF80]">Learn Vocabularies</button></Link>
             </div>
         </div >
     );

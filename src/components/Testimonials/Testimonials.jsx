@@ -1,7 +1,4 @@
 import Heading from '../Heading/Heading';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// import 'aos/dist/aos.js';
 
 const Testimonials = () => {
     return (
