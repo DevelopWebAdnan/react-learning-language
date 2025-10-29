@@ -18,6 +18,7 @@ import MyProfile from './pages/MyProfile/MyProfile.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import AuthProvider from './providers/AuthProvider.jsx';
 import PrivateRoute from './routes/PrivateRoute.jsx';
+import UpdateProfile from './pages/UpdateProfile/UpdateProfile.jsx';
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "/myProfile",
         element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>
+      },
+      {
+        path: "/updateProfile",
+        element: <UpdateProfile></UpdateProfile>
       }
     ],
   },

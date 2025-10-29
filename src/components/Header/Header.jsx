@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import Navbar from '../Navbar/Navbar';
-import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 
 const Header = () => {
