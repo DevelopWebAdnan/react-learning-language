@@ -1,18 +1,24 @@
 import { GoogleAuthProvider } from 'firebase/auth';
-import { useContext, useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useContext, useRef, useState } from 'react';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 
+// export const EmailContext = createContext(null);
+
 const Login = () => {
+
     const location = useLocation();
     console.log(location);
-    
+
     const navigate = useNavigate();
 
-    const { loginUser, loginWithGoogle } = useContext(AuthContext);
+    const { loginUser, loginWithGoogle, updatePassword } = useContext(AuthContext);
 
     const [errorMessage, setErrorMessage] = useState('');
 
+    const emailRef = useRef();
+    // const email = emailRef.current?.value;
+    // console.log(email);
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -23,6 +29,7 @@ const Login = () => {
         loginUser(email, password)
             .then(result => {
                 console.log(result.user);
+                console.log('emailRef', emailRef);
                 navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
@@ -43,26 +50,49 @@ const Login = () => {
             })
     }
 
+    const handleForgotPassword = () => {
+        const email = emailRef.current?.value;
+        console.log('get me an email address', email);
+        if (!email) {
+            alert('Please provide a valid email address.');
+        }
+        else {
+            updatePassword(email)
+                .then(() => {
+                    alert('Please check your email, password reset mail is sent.');
+                    // navigate('../https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox/');
+                })
+                .catch((error) => {
+                    setErrorMessage(error.message);
+                });
+        }
+    }
+
     return (
         <div className="hero bg-base-200 min-h-screen">
             <div className="hero-content flex-col">
-                <div className="text-center lg:text-left">
+                <div className="text-center">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">Login now!</h1>
                 </div>
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <div className="card-body">
                         <form onSubmit={handleLogin} className="fieldset">
                             <label className="label">Email</label>
-                            <input type="email" name='email' className="input" placeholder="Email" required />
+                            <input ref={emailRef} type="email" name='email' className="input" placeholder="Email" required />
                             <label className="label">Password</label>
-                            <input type="password" name='password' className="input" placeholder="Password" required />
-                            <div><a className="link link-hover">Forgot password?</a></div>
+                            <input type="password" name='password' className="input" placeholder="Password" />
+                            {/* <div><Link to="/forgetPassword" className="link link-hover">Forgot password?</Link></div> */}
+
+                            {/* <a onClick={() => handleForgotPassword} className="link link-hover">Forgot password?</a> */}
                             <button className="btn btn-neutral mt-4">Login</button>
 
                         </form>
                         {
                             errorMessage && <p className='text-red-500'>{errorMessage}</p>
                         }
+                        <div className='mt-4 lg:mt-5'>
+                            <button onClick={handleForgotPassword} className="link link-hover">Forgot password?</button>
+                        </div>
 
                         <p className='m-2 md:m-3 lg:m-4 font-semibold'>New to this website? Please <Link to='/register'>Register</Link></p>
 
