@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const VocabularyCards = ({ matchingVocabulary }) => {
     console.log("props=> matchingVocabulary ", matchingVocabulary);
@@ -18,19 +19,21 @@ const VocabularyCards = ({ matchingVocabulary }) => {
 
     return (
         <div>
-            <div className={`card text-primary-content w-3xs md:w-2xs lg:w-xs 
+            <Link to={`/id/${Id}/vocabularyPronounce`}>
+                <div className={`card text-primary-content w-3xs md:w-2xs lg:w-xs 
 ${difficulty === 'easy' ? 'bg_easy' : (difficulty === 'medium' ? 'bg_medium' : 'bg_difficult')}`}>
-                <div className="card-body">
-                    <h2 className="card-title">Word: {word}</h2>
-                    <p className='md:text-lg lg:text-xl'>Meaning: {meaning}</p>
-                    <p className='md:text-lg lg:text-xl'>Pronunciation: {pronunciation}</p>
-                    <p className='md:text-lg lg:text-xl'>Part of speech: {part_of_speech}</p>
-                    <div className="card-actions justify-end">
+                    <div className="card-body">
+                        <h2 className="card-title">Word: {word}</h2>
+                        <p className='md:text-lg lg:text-xl'>Meaning: {meaning}</p>
+                        <p className='md:text-lg lg:text-xl'>Pronunciation: {pronunciation}</p>
+                        <p className='md:text-lg lg:text-xl'>Part of speech: {part_of_speech}</p>
+                        <div className="card-actions justify-end">
 
-                        <button className="btn font-bold text-base-100 bg-[#5FCF80]" onClick={() => openModal()}>When To Say</button>
+                            <button className="btn font-bold text-base-100 bg-[#5FCF80]" onClick={() => openModal()}>When To Say</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Link>
 
             {/* Modal */}
             <dialog ref={modalRef} className="modal modal-bottom sm:modal-middle">

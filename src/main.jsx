@@ -19,6 +19,7 @@ import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import AuthProvider from './providers/AuthProvider.jsx';
 import PrivateRoute from './routes/PrivateRoute.jsx';
 import UpdateProfile from './pages/UpdateProfile/UpdateProfile.jsx';
+import VocabularyPronounce from './components/VocabularyPronounce/VocabularyPronounce.jsx';
 
 const router = createBrowserRouter([
   {
@@ -73,6 +74,11 @@ const router = createBrowserRouter([
       //   path: "/forgetPassword",
       //   element: <ForgetPassword></ForgetPassword>
       // }
+      {
+        path: "/id/:id/vocabularyPronounce",
+        loader: () => fetch("/vocabularies.json"),
+        element: <VocabularyPronounce></VocabularyPronounce>
+      }
     ],
   },
 ]);

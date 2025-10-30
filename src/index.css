@@ -22,3 +22,17 @@ a.active {
 .bg_difficult {
     background-color: brown;
 }
+
+.card {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #f0f0f0;
+}
