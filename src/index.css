@@ -23,16 +23,24 @@ a.active {
     background-color: brown;
 }
 
-.vocabularyCard {
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    margin: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.bg_language-lab {
+    background-image: url('../src/assets/images/language-lab.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.vocabularyCard:hover {
-    background-color: #f0f0f0;
+.bg_cup-grammar-books {
+    background-image: url('../src/assets/images/cup-grammar-books-min.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg_laptop-login-screen {
+    background-image: url('../src/assets/images/laptop-login-screen.jpg');
+}
+
+.bg_language {
+    background-image: url('../src/assets/images/language.jpg');
 }

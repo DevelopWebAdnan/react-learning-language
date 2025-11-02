@@ -17,7 +17,7 @@ const Tutorials = () => {
                 <div className='text-center mb-4 md:mb-5 lg:mb-6'>
                     <div className="input">https://www.youtube.com/</div>
                 </div>
-                <div className="grid place-content-center border-t border-base-300">
+                <div className="grid place-content-center border-t border-base-300 bg_language-lab">
 
                     <div className="card shadow-sm">
                         <div className='card-body'>

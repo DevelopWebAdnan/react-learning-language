@@ -6,7 +6,7 @@ const UpdateProfile = () => {
 
     const [updateError, setUpdateError] = useState('');
 
-    const { updateUser } = useContext(AuthContext);
+    const { updateUser, setLoading } = useContext(AuthContext);
 
     const navigate = useNavigate();
 
@@ -14,7 +14,7 @@ const UpdateProfile = () => {
         e.preventDefault();
         const name = e.target.name.value;
         const photo = e.target.photo.value;
-        console.log(name, photo);
+        // console.log(name, photo);
         if (name.length < 5) {
             setUpdateError('Name must be 5 characters or longer');
             return;
@@ -27,11 +27,12 @@ const UpdateProfile = () => {
 
         updateUser(updatedData)
             .then(() => {
-                console.log('Profile updated!');
+                // console.log('Profile updated!');
                 navigate('/myProfile');
+                setLoading(false);
             })
             .catch((error) => {
-                console.log(error.message);
+                // console.log(error.message);
                 setUpdateError(error.message);
             });
     }
