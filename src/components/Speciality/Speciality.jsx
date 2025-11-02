@@ -9,7 +9,7 @@ const Speciality = () => {
             <Heading subtitle="Our Course Speciality"></Heading>
             <Heading title="Why Choose Us"></Heading>
             <div className="join join-vertical lg:join-horizontal flex justify-center items-center mt-6">
-                <div className="card join-item bg-base-100 w-96 shadow-sm">
+                <div className="card join-item bg-base-100 w-full md:w-96 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img
                             src={chatting}
@@ -21,7 +21,7 @@ const Speciality = () => {
                         <p>A visitor / an user who has an account on this website can access certain features, but after logging in, and then visit those certain parts of the application.</p>
                     </div>
                 </div>
-                <div className="card join-item bg-base-100 w-96 shadow-sm">
+                <div className="card join-item bg-base-100 w-full md:w-96 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img
                             src={reshotVideo}
@@ -33,7 +33,7 @@ const Speciality = () => {
                         <p>Visitors / users who are logged in can visit certain parts of the application, but in case of video tutorials, they can access this part of the application / feature, without having an account on this website.</p>
                     </div>
                 </div>
-                <div className="card join-item bg-base-100 w-96 shadow-sm">
+                <div className="card join-item bg-base-100 w-full md:w-96 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img
                             src={reshotLanguage}

@@ -8,14 +8,6 @@ const Navbar = () => {
     const { user, signOutUser } = useContext(AuthContext);
     console.log(user);
 
-    // const handleSignOut = () => {
-    //     signOutUser()
-    //     .then(result => {
-    //         console.log(result.user);
-    //     })
-    //     .catch(error => console.log('ERROR', error.message));
-    // }
-
     const links = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/startLearning'>Start-learning</NavLink></li>
@@ -40,7 +32,6 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                {/* <a className="btn btn-ghost text-xl">Email </a> */}
                 <div className='w-20 md:w-32 lg:w-40'>
                     <Link to="/">
                         <img className='w-screen' src={logoRemoveBg} alt="" />
@@ -56,7 +47,7 @@ const Navbar = () => {
                 {
                     user ? <>
                         <img src={user?.photoURL} className='w-11 md:w-20 lg:w-24 rounded-4xl md:rounded-3xl lg:rounded-2xl' alt="" />
-                        <button onClick={signOutUser} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Log-Out</button>
+                        <button onClick={signOutUser} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-base-100 bg-[#5FCF80]">Log-Out</button>
                     </>
                         :
                         <Link className='btn btn-lg lg:btn-xl font-bold text-base-100 bg-[#5FCF80]' to="/login">Login</Link>

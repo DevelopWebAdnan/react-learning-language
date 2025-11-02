@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
+import pronounceWord from '../../utilities/pronounceWord';
 
 const VocabularyCards = ({ matchingVocabulary }) => {
     console.log("props=> matchingVocabulary ", matchingVocabulary);
@@ -19,7 +19,8 @@ const VocabularyCards = ({ matchingVocabulary }) => {
 
     return (
         <div>
-            <Link to={`/id/${Id}/vocabularyPronounce`}>
+            {/* <Link to={`/id/${Id}/vocabularyPronounce`}> */}
+            <div onClick={() => pronounceWord(`${word}`)}>
                 <div className={`card text-primary-content w-3xs md:w-2xs lg:w-xs 
 ${difficulty === 'easy' ? 'bg_easy' : (difficulty === 'medium' ? 'bg_medium' : 'bg_difficult')}`}>
                     <div className="card-body">
@@ -33,7 +34,8 @@ ${difficulty === 'easy' ? 'bg_easy' : (difficulty === 'medium' ? 'bg_medium' : '
                         </div>
                     </div>
                 </div>
-            </Link>
+            </div>
+            {/* </Link> */}
 
             {/* Modal */}
             <dialog ref={modalRef} className="modal modal-bottom sm:modal-middle">

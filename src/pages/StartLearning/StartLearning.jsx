@@ -43,7 +43,7 @@ const StartLearning = () => {
             </div>
 
             {/* 10 static cards */}
-            <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-7 justify-center'>
+            <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-7 justify-center items-center'>
                 {
                     uniqueLessons.map(uniqueLesson =>
                         <LessonCards key={uniqueLesson} uniqueLesson={uniqueLesson}></LessonCards>

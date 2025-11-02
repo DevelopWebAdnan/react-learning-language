@@ -25,10 +25,10 @@ const Testimonials = () => {
                             <div className="justify-end card-actions">
                                 <div className="rating rating-md">
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />
-                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="2 star" defaultChecked />
+                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="2 star" />
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="3 star" />
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="4 star" />
-                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="5 star" defaultChecked />
                                 </div>
                             </div>
                         </div>
@@ -78,8 +78,8 @@ const Testimonials = () => {
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="2 star" />
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="3 star" />
-                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="4 star" />
-                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="5 star" defaultChecked />
+                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="4 star" defaultChecked />
+                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="5 star" />
                                 </div>
                             </div>
                         </div>
@@ -112,10 +112,10 @@ const Testimonials = () => {
                 </div>
             </div>
             <div className="flex w-full justify-center gap-2 py-2">
-                <a href="#item1" className="btn btn-xs">1</a>
-                <a href="#item2" className="btn btn-xs">2</a>
-                <a href="#item3" className="btn btn-xs">3</a>
-                <a href="#item4" className="btn btn-xs">4</a>
+                <a href="#item1" className="btn btn-xs text-base-100 bg-[#5FCF80]">1</a>
+                <a href="#item2" className="btn btn-xs text-base-100 bg-[#5FCF80]">2</a>
+                <a href="#item3" className="btn btn-xs text-base-100 bg-[#5FCF80]">3</a>
+                <a href="#item4" className="btn btn-xs text-base-100 bg-[#5FCF80]">4</a>
             </div>
         </div>
     );

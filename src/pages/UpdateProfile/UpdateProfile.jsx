@@ -10,15 +10,12 @@ const UpdateProfile = () => {
 
     const navigate = useNavigate();
 
-    // const nameRef = useRef();
-    // const photoRef = useRef();
-    
     const handleUpdateProfile = (e) => {
         e.preventDefault();
         const name = e.target.name.value;
         const photo = e.target.photo.value;
         console.log(name, photo);
-        if(name.length < 5) {
+        if (name.length < 5) {
             setUpdateError('Name must be 5 characters or longer');
             return;
         }
@@ -29,13 +26,14 @@ const UpdateProfile = () => {
         }
 
         updateUser(updatedData)
-        .then(() => {
-            console.log('Profile updated!');
-            navigate('/myProfile');
-        })
-        .catch((error) => {
-            console.log(error.message);
-        });
+            .then(() => {
+                console.log('Profile updated!');
+                navigate('/myProfile');
+            })
+            .catch((error) => {
+                console.log(error.message);
+                setUpdateError(error.message);
+            });
     }
     return (
         <div className="hero bg-base-200 min-h-screen">
@@ -50,16 +48,12 @@ const UpdateProfile = () => {
                             <input type="text" name='name' className="input" placeholder="Name" required />
                             <label className="label">Photo-URL</label>
                             <input type="text" name='photo' className="input" placeholder="Photo-url" required />
-                            <button className="btn font-bold text-base-100 bg-[#5FCF80] mt-4">Update Profile</button>
+                            <button className="btn font-bold text-base-100 bg-[#5FCF80] mt-4">Update Information</button>
 
                         </form>
-                         {
+                        {
                             updateError && <p className='text-red-500'>{updateError}</p>
                         }
-
-                        {/* <p className='m-2 md:m-3 lg:m-4 font-semibold'>Already have an account? Please <Link to='/login'>Login</Link></p> */}
-
-                        {/* Google */}
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
@@ -70,7 +70,7 @@ const Register = () => {
                             <input type="text" name='photo' className="input" placeholder="Photo-url" required />
                             <label className="label">Password</label>
                             <input type="password" name='password' className="input" placeholder="Password" required />
-                            <button className="btn btn-neutral mt-4">Register</button>
+                            <button className="btn text-base-100 bg-[#5FCF80] mt-4">Register</button>
 
                         </form>
                         {

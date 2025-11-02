@@ -23,7 +23,7 @@ a.active {
     background-color: brown;
 }
 
-.card {
+.vocabularyCard {
     padding: 20px;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -33,6 +33,6 @@ a.active {
     transition: background-color 0.3s;
 }
 
-.card:hover {
+.vocabularyCard:hover {
     background-color: #f0f0f0;
 }

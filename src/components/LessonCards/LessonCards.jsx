@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const LessonCards = ({ uniqueLesson }) => {
 
     return (
-        <div key={uniqueLesson} className="card w-36 bg-base-100 card-md shadow-sm">
+        <div key={uniqueLesson} className="card w-full md:w-36 bg-base-100 card-md shadow-sm">
             <Link to={`/startLearning/lessons/${uniqueLesson}`}>
                 <div className="card-body">
                     {
