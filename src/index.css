@@ -44,3 +44,21 @@ a.active {
 .bg_language {
     background-image: url('../src/assets/images/language.jpg');
 }
+
+.bg_symbol-scatter {
+    background-image: url('../src/assets/images/symbol-scatter-haikei.svg');
+}
+
+.bg_soundWave {
+    background-image: url('../src/assets/images/soundWave.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_undraw-user-account {
+    background-image: url('../src/assets/images/undraw_user-account.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -5,6 +5,7 @@ const Tutorials = () => {
    
     return (
         <div>
+            <title>Tutorials | React Learning Language</title>
             <div className="hero bg-[#5bc57a] min-h-11 py-6 md:py-7 mb-4 md:mb-5">
                 <div className="hero-content text-center">
                     <div>

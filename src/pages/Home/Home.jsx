@@ -6,8 +6,12 @@ import Speciality from '../../components/Speciality/Speciality';
 import 'animate.css';
 
 const Home = () => {
+    // const VITE_ami = 'Adnan';
+    console.log(import.meta.env.VITE_ami);
+    
     return (
         <div>
+            <title>Home | React Learning Language</title>
             <section className='animate__animated animate__fadeInDownBig animate__slow my-14 md:my-16 lg:my-20'>
                 <ImageSlider></ImageSlider>
             </section>

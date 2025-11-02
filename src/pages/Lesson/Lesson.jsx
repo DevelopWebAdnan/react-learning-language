@@ -21,6 +21,7 @@ const Lesson = () => {
 
     return (
         <div>
+            <title>Start Learning | Lesson</title>
             <div className="hero bg-[#5bc57a] min-h-11 py-6 md:py-7 mb-4 md:mb-5">
                 <div className="hero-content text-center">
                     <div>
@@ -30,7 +31,7 @@ const Lesson = () => {
                 </div>
             </div>
 
-            <section className='my-14 md:my-16 lg:my-20'>
+            <section className='my-14 md:my-16 lg:my-20 bg_soundWave'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 justify-center items-center'>
                     {
                         matchingVocabularies.map(matchingVocabulary =>

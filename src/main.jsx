@@ -69,11 +69,6 @@ const router = createBrowserRouter([
         path: "/updateProfile",
         element: <UpdateProfile></UpdateProfile>
       },
-      // {
-      //   path: "/id/:id/vocabularyPronounce",
-      //   loader: () => fetch("/vocabularies.json"),
-      //   element: <VocabularyPronounce></VocabularyPronounce>
-      // }
     ],
   },
 ]);

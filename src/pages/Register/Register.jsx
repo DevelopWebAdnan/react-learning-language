@@ -53,6 +53,7 @@ const Register = () => {
 
     return (
         <div className="hero bg-base-200 min-h-screen bg_language">
+            <title>Register | React Learning Language</title>
             <div className="hero-content flex-col">
                 <div className="text-center">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">Sign Up now!</h1>
