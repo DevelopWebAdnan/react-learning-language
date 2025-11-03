@@ -2,11 +2,10 @@
  Lingo Bingo: A Vocabulary Learning Application
 
 # Purpose:
-The purpose of this language learning web application is to make learning the Arabic language easy and enjoyable. For this reason, I have tried to make the web application user-friendly and attractive for people of all ages, and using any device. Just the device has to be connected to the Internet to visit the website.
+The purpose of this language learning web application is to make learning the Arabic language easy and enjoyable. For this reason, I have tried to make the web application user-friendly and attractive for people of all ages, using any device. Just the device has to be connected to the Internet to visit the website.
 
 ## Live URL:
 - (https://react-learning-language.web.app/)
-- (https://react-learning-language.firebaseapp.com/)
 
 ## Key Features:
 Responsiveness: The website is fully responsive on mobile, tablet, and desktop.
@@ -56,6 +55,7 @@ Go to PC Settings > Language > install this language with voice pack.
 
 ## Npm packages used:
 - [tailwindcss](https://tailwindcss.com/)
+- [daisyUI](https://daisyui.com/)
 - [Firebase](https://firebase.google.com/)
 - [React Router](https://reactrouter.com/home)
 - [animate.style](https://animate.style/)
