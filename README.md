@@ -2,11 +2,11 @@
  Lingo Bingo: A Vocabulary Learning Application
 
 # Purpose:
-The purpose of this language learning web application is to make learning the Arabic language easy and enjoyable. For this reason, I have tried to make the web application user-friendly and attractive for people of all ages, and using any device. Just the device has to be connected to the Internet.
+The purpose of this language learning web application is to make learning the Arabic language easy and enjoyable. For this reason, I have tried to make the web application user-friendly and attractive for people of all ages, and using any device. Just the device has to be connected to the Internet to visit the website.
 
 ## Live URL:
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- (https://react-learning-language.web.app/)
+- (https://react-learning-language.firebaseapp.com/)
 
 ## Key Features:
 Responsiveness: The website is fully responsive on mobile, tablet, and desktop.
@@ -37,18 +37,18 @@ This page is only accessible after login; if the user is not authenticated, he/s
 6. My-Profile _private Route_
 On clicking on my profile at navbar, the user will see this page. The user will see all his Profile Information here. 
 
-8. Tutorial page (Private Route):
+7. Tutorial page (Private Route):
 - I have embedded 8 videos on this language from youtube.
 - A Button “Learn Vocabularies” will navigate users to the “start-lesson” route.
 
-9. I have implemented One Animation package on the Home Page.
+8. I have implemented One Animation package on the Home Page.
 
-10. Forget Password
+9. Forget Password
 
-11. Update Information Feature:
+10. Update Information Feature:
 - On Clicking update, the user profile is updated from Firebase and the user is navigated to the my profile Route.
 
-12. Speak up your Vocabularies
+11. Speak up your Vocabularies
 - On clicking a particular vocabulary card, the word is pronounced so that the user can hear the vocabularies.
 NOTE :
 Make sure the Arabic language with voice is installed on your PC. 
