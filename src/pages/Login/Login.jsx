@@ -5,7 +5,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 const Login = () => {
 
     const location = useLocation();
-    console.log(location);
+    // console.log(location);
 
     const navigate = useNavigate();
 
@@ -20,10 +20,10 @@ const Login = () => {
         setErrorMessage('');
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
+        // console.log(email, password);
         loginUser(email, password)
             .then(result => {
-                console.log(result.user);
+                // console.log(result.user);
                 navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
@@ -35,7 +35,7 @@ const Login = () => {
     const handleGoogleLogin = () => {
         loginWithGoogle()
             .then(result => {
-                console.log(result.user);
+                // console.log(result.user);
                 navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
