@@ -5,7 +5,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 const Header = () => {
 
     const { user } = useContext(AuthContext);
-    console.log(user);
+    // console.log(user);
 
     return (
         <div>

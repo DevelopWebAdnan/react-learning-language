@@ -62,3 +62,17 @@ a.active {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.bg_worldMapSaudiArabia {
+    background-image: url('../src/assets/images/worldMap,SaudiArabia.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg_ranger {
+    background-image: url('../src/assets/images/ranger.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

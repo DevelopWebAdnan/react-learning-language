@@ -8,7 +8,7 @@ import 'animate.css';
 const Home = () => {
     
     return (
-        <div>
+        <div className='bg_worldMapSaudiArabia'>
             <title>Home | Lingo Bingo</title>
             <section className='animate__animated animate__fadeInDownBig animate__slow my-14 md:my-16 lg:my-20'>
                 <ImageSlider></ImageSlider>
@@ -19,7 +19,7 @@ const Home = () => {
             <section className='my-14 md:my-16 lg:my-20 animate__animated animate__shakeX animate__slow animate__repeat-3 animate__delay-3s'>
                 <Success></Success>
             </section>
-            
+
             {/* 2 extra sections: with my own design. */}
             <section className='animate__animated animate__heartBeat animate__repeat-2 animate__slower animate__delay-4s my-14 md:my-16 lg:my-20'>
                 <Testimonials></Testimonials>

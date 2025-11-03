@@ -4,7 +4,7 @@ import Heading from '../Heading/Heading';
 const Success = () => {
     return (
         <div>
-           <Heading title="Our Success"></Heading>
+           <Heading title="My Success"></Heading>
            
             {/* Stat */}
             <div className="stats stats-vertical lg:stats-horizontal shadow grid items-center md:justify-center">
