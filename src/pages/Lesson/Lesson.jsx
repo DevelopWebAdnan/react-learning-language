@@ -12,7 +12,7 @@ const Lesson = () => {
 
     useEffect(() => {
         const matchingVocabularyCards = [...vocabularies].filter(vocabularyCard => vocabularyCard.Lesson_no == lesson);
-        console.log(matchingVocabularyCards);
+        // console.log(matchingVocabularyCards);
        
         setMatchingVocabularies(matchingVocabularyCards);
     }, [lesson, vocabularies])

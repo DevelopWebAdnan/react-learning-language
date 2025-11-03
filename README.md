@@ -1,65 +1,62 @@
-# Project Name: React Learning Language
+# Project Name:
+ Lingo Bingo: A Vocabulary Learning Application
 
 # Purpose:
-The purpose of this language learning web application is to make learning the Arabic language easy and enjoyable. For this reason, I have tried to make the web application
+The purpose of this language learning web application is to make learning the Arabic language easy and enjoyable. For this reason, I have tried to make the web application user-friendly and attractive for people of all ages, and using any device. Just the device has to be connected to the Internet.
 
 ## Live URL:
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
 ## Key Features:
-Responsiveness: Ensure the website is fully responsive on mobile, tablet, and desktop.
+Responsiveness: The website is fully responsive on mobile, tablet, and desktop.
 
-Layout Structure
+1. Layout Structure:
 The whole application will be on a single-page layout. With the following components.
 Header: 
-- Show a welcome message with the user name at the top.  (only if user login) 
-- A header with Logo at the Left/ center, Login Button at the Right
-If user Logged in ( show user image and Log-Out Button ) 
-
-Footer
+- A welcome message is shown with the user name at the top.  (only if user login) 
+- A header with Logo at the Left, Login Button at the Right
+If user Logged in ( user image and Log-Out Button are shown ) 
+Footer; and
 Main: The Main Section will show different pages based on route.
 
-JSON Data Generation
-Create a JSON data (array of objects) of a minimum of (50-200) object of vocabularies
+2. JSON Data Generation:
+I have created a JSON data (array of objects) of 150 object of vocabularies.
 
-3. Let’s Learn Page
-- Show users 10 static cards for 10 Lessons.  The card will have a simple Text Lesson-1/2/3
-    - Clicking the card will redirect you to the lesson/lesson_no page
+3. Let’s Learn Page:
+- Users are shown 10 static cards for 10 Lessons.  The card will have a simple Text Lesson-1/2/3
+    - Clicking the card will redirect him/her to the lesson/lesson_no page
 
-4. Lessons/:lesson_no  _private Route_
-This page is only accessible after login; redirect to the login page if the user is not authenticated. 
+4. Lessons/:lesson_no  _private Route_:
+This page is only accessible after login; if the user is not authenticated, he/she is redirected to the login page. 
 
-6. Authentication System
-On Clicking the Login Button / browsing any private Route user will be redirected to this route.
-User Login
-User Registration
-Create a register page with a form, so that the user can register himself in this application. 
+5. Authentication System:
+- User Login: On Clicking the Login Button / browsing any private Route user will be redirected to this route.
+- User Registration: I have created a register page with a form, so that the user can register himself in this application. 
 
-7. My-Profile(Private Route)  _private Route_
-On clicking on my profile at navbar,  the user will see this page.  The user will see all his Profile Information Here 
+6. My-Profile _private Route_
+On clicking on my profile at navbar, the user will see this page. The user will see all his Profile Information here. 
 
 8. Tutorial page (Private Route):
-- Embed 6-8 videos on this language from youtube
-- A Button “Learn Vocabularies”  will navigate users to the “start-lesson”  route.
+- I have embedded 8 videos on this language from youtube.
+- A Button “Learn Vocabularies” will navigate users to the “start-lesson” route.
 
-1. Implemented One Animation package on the Home Page
+9. I have implemented One Animation package on the Home Page.
 
-2. Forget Password
+10. Forget Password
 
-3. Update Information Feature:
-- On Clicking update, update the user profile from Firebase and navigate the user to the my profile Route
+11. Update Information Feature:
+- On Clicking update, the user profile is updated from Firebase and the user is navigated to the my profile Route.
 
-4.  Speak up your Vocabularies
-- On clicking a particular vocabulary card, pronounce the word so that the user can hear the vocabularies.
-NOTE :   
-If you use Spanish ,  make sure the Spanish language with voice  install on your PC. 
-Go to PC Settings > Language >  install this language with voice pack.
+12. Speak up your Vocabularies
+- On clicking a particular vocabulary card, the word is pronounced so that the user can hear the vocabularies.
+NOTE :
+Make sure the Arabic language with voice is installed on your PC. 
+Go to PC Settings > Language > install this language with voice pack.
 
 ## Npm packages used:
-Currently, one npm package is listed:
-
-- npm install firebase
+- [tailwindcss](https://tailwindcss.com/)
+- [Firebase](https://firebase.google.com/)
+- [React Router](https://reactrouter.com/home)
 - [animate.style](https://animate.style/)
-- [@react countup - npm](https://www.npmjs.com/package/react-countup)
-- uses [SWC](https://swc.rs/) for Fast Refresh
+- [react countup - npm](https://www.npmjs.com/package/react-countup)

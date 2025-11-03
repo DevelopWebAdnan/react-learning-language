@@ -5,7 +5,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 const Login = () => {
 
     const location = useLocation();
-    console.log(location);
+    // console.log(location);
 
     const navigate = useNavigate();
 
@@ -14,22 +14,20 @@ const Login = () => {
     const [errorMessage, setErrorMessage] = useState('');
 
     const emailRef = useRef(null);
-    const emailRefValue = emailRef.current?.value;
-    console.log('emailRefValue', emailRefValue);
 
     const handleLogin = (e) => {
         e.preventDefault();
         setErrorMessage('');
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
+        // console.log(email, password);
         loginUser(email, password)
             .then(result => {
-                console.log(result.user);
+                // console.log(result.user);
                 navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
-                console.log(error.message);
+                // console.log(error.message);
                 setErrorMessage(error.message);
             })
     }
@@ -37,18 +35,18 @@ const Login = () => {
     const handleGoogleLogin = () => {
         loginWithGoogle()
             .then(result => {
-                console.log(result.user);
+                // console.log(result.user);
                 navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
-                console.log(error.message);
+                // console.log(error.message);
                 setErrorMessage(error.message);
             })
     }
 
     const handleForgotPassword = () => {
     const emailRefValue = emailRef.current?.value;
-    console.log('get me an email address', emailRefValue);
+    // console.log('get me an email address', emailRefValue);
     if (!emailRefValue) {
         alert('Please provide a valid email address.');
     }
@@ -58,7 +56,7 @@ const Login = () => {
                     alert('Please check your email, password reset mail is sent to ' + emailRefValue);
                 })
                 .catch((error) => {
-                    console.log(error.message);
+                    // console.log(error.message);
                     setErrorMessage(error.message);
                 });
         }
@@ -66,7 +64,7 @@ const Login = () => {
 
     return (
         <div className="hero bg-base-200 min-h-screen bg_laptop-login-screen">
-            <title>Login | React Learning Language</title>
+            <title>Login | Lingo Bingo</title>
             <div className="hero-content flex-col">
                 <div className="text-center">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">Login now!</h1>

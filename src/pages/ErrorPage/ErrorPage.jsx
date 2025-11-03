@@ -5,7 +5,7 @@ const ErrorPage = () => {
     
     return (
         <div className='bg_cup-grammar-books mt-7 md:mt-11 lg:mt-14 text-center'>
-            <title>Error Page | React Learning Language</title>
+            <title>Error Page | Lingo Bingo</title>
             <p className='text-lg md:text-xl lg:text-2xl text-red-600'>{error.statusText || error.message}</p>
             {
                 error.status === 404 && <div>

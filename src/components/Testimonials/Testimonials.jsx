@@ -47,7 +47,7 @@ const Testimonials = () => {
                             </div>
 
                             <h2 className="card-title">Riyon bhai</h2>
-                            <p> - " I appreciate the app’s ability to improve vocabulary grades. "</p>
+                            <p> - " I appreciate the app's ability to pronounce vocabulary words. "</p>
                             <div className="justify-end card-actions">
                                 <div className="rating rating-md">
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />
@@ -78,8 +78,8 @@ const Testimonials = () => {
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="2 star" />
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="3 star" />
-                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="4 star" defaultChecked />
-                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+                                    <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="5 star" defaultChecked />
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ const Testimonials = () => {
                             </div>
 
                             <h2 className="card-title">Nahiyan</h2>
-                            <p> - " Highly rated for professional language development and ease of use across devices. "</p>
+                            <p> - " Highly rated for professional Arabic language development and ease of use across devices. "</p>
                             <div className="justify-end card-actions">
                                 <div className="rating rating-md">
                                     <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />

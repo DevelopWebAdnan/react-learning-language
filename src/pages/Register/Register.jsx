@@ -1,7 +1,6 @@
 import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
-import { GoogleAuthProvider } from 'firebase/auth';
 
 const Register = () => {
 
@@ -18,7 +17,7 @@ const Register = () => {
         const photo = e.target.photo.value;
         const password = e.target.password.value;
 
-        console.log(name, email, photo, password);
+        // console.log(name, email, photo, password);
 
         // RegEx for password validation
         const regex = /^(?=.*[a-z])(?=.*[A-Z])[A-Za-z\d@$!%*?&]{6,}$/;
@@ -31,7 +30,7 @@ const Register = () => {
         // create user
         createUser(email, password)
             .then(result => {
-                console.log(result.user);
+                // console.log(result.user);
                 e.target.reset();
                 navigate('/');
             })
@@ -43,7 +42,7 @@ const Register = () => {
     const handleGoogleLogin = () => {
         loginWithGoogle()
             .then(result => {
-                console.log(result.user);
+                // console.log(result.user);
                 navigate('/');
             })
             .catch(error => {
@@ -53,7 +52,7 @@ const Register = () => {
 
     return (
         <div className="hero bg-base-200 min-h-screen bg_language">
-            <title>Register | React Learning Language</title>
+            <title>Register | Lingo Bingo</title>
             <div className="hero-content flex-col">
                 <div className="text-center">
                     <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">Sign Up now!</h1>

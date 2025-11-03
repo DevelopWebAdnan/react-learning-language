@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 import logoRemoveBg from "../../assets/images/1-removebg.png";
@@ -6,7 +6,7 @@ import logoRemoveBg from "../../assets/images/1-removebg.png";
 const Navbar = () => {
 
     const { user, signOutUser } = useContext(AuthContext);
-    console.log(user);
+    // console.log(user);
 
     const links = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -17,7 +17,6 @@ const Navbar = () => {
             user && <li><NavLink to='/myProfile'>My-profile</NavLink></li>
         }
     </>
-
 
     return (
         <div className="navbar bg-white/30 shadow-sm">

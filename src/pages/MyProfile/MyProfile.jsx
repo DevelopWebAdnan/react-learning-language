@@ -9,7 +9,7 @@ const MyProfile = () => {
 
     return (
         <div>
-            <title>My Profile | React Learning Language</title>
+            <title>My Profile | Lingo Bingo</title>
             <Heading title={`Welcome, ${user && user.displayName}`}></Heading>
             <div className="hero bg-base-200">
                 <div className="hero-content flex-col lg:flex-row">

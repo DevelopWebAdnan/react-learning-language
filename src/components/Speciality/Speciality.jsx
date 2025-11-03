@@ -17,7 +17,7 @@ const Speciality = () => {
                             className="rounded-xl" />
                     </figure>
                     <div className="card-body items-center text-center">
-                        <h2 className="card-title">Online Courses</h2>
+                        <h2 className="card-title">Vocabulary Cards</h2>
                         <p>A visitor / an user who has an account on this website can access certain features, but after logging in, and then visit those certain parts of the application.</p>
                     </div>
                 </div>

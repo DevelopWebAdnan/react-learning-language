@@ -10,7 +10,6 @@ const StartLearning = () => {
     const [uniqueLessons, setUniqueLessons] = useState([]);
 
     useEffect(() => {
-        // if (vocabularies) {
             const lessons = vocabularies.map(vocabularyCard => vocabularyCard.Lesson_no);
             // console.log(lessons);
             let uniqueItems = [];
@@ -25,15 +24,11 @@ const StartLearning = () => {
             }
             // console.log(uniqueItems);
             setUniqueLessons(uniqueItems);
-        // }
-        // else {
-        //     setUniqueLessons([]);
-        // }
     }, [vocabularies])
 
     return (
         <div className='my-14 md:my-16 lg:my-20 bg_symbol-scatter'>
-            <title>Start Learning | React Learning Language</title>
+            <title>Start Learning | Lingo Bingo</title>
             <div className="hero bg-[#5bc57a] min-h-11 py-6 md:py-7 mb-4 md:mb-5">
                 <div className="hero-content text-center">
                     <div>

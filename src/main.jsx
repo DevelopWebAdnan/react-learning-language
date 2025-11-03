@@ -47,7 +47,6 @@ const router = createBrowserRouter([
       {
         path: "/tutorials",
         element: <PrivateRoute><Tutorials></Tutorials></PrivateRoute>,
-        // loader: () => fetch("/vocabularies.json"),
       },
       {
         path: "/aboutUs",
@@ -67,7 +66,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/updateProfile",
-        element: <UpdateProfile></UpdateProfile>
+        element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
       },
     ],
   },
